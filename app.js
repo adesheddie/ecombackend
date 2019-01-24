@@ -48,6 +48,6 @@ app.get('/',function(req,res){
     console.log(req);
     res.send('Ecom Backend Running...' + req.connection.remoteAddress);
 })
-app.listen('3001');
+app.listen(process.env.PORT || 3001);
 
 console.log('http://localhost:3001/');
